@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 're`act'
 
 function App() {
   return (
-    <div>hello</div>
+    <div className=' flex h-screen w-screen bg-black text-white'>
+
+    </div>
   )
 }
 
