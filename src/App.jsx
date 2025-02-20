@@ -1,26 +1,3 @@
-// import React from 'react'
-// import product from '../db/data.json'
-// import { useState } from 'react'
-
-
-// const App = () => {
-//     const [data,setData] = useState(product.data.items)
-//   return (
-//     <div className='p-10 '>
-//       <h1 className='text-3xl uppercase'>product list</h1>
-//       {data.map((item) => (
-//            <div key={item.id}>
-//            <p>{item.name}</p>
-//            <p>{item.description}</p>
-//            <p>{item.price}</p>
-//            <p>{item.category}</p>
-//          </div>
-//       ))} 
-//     </div>
-//   )
-// }
-
-// export default App
 import React, { useState } from "react";
 import productData from "../db/data.json";
 
@@ -39,7 +16,7 @@ const App = () => {
 
   return (
     <div className="bg-gray-700 min-h-screen">
-      {/* Fixed Navbar */}
+      
       <div className="fixed top-0 left-0 w-full bg-gray-600 p-4 mt-1 rounded-2xl z-50">
         <div className="flex justify-between items-center">
           <div className="text-white text-xl font-bold">PRODUCT LIST</div>
@@ -59,16 +36,15 @@ const App = () => {
             <input
               type="text"
               placeholder="Search by Category"
-              className="p-2 border rounded"
+              className="p-2 border rounded "
               onChange={(e) => setSearchCategory(e.target.value)}
             />
           </div>
         </div>
       </div>
 
-      {/* Content with padding to avoid overlap with navbar */}
       <div className="p-10 pt-24 bg-gray-700">
-        {/* Product Cards */}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map((product) => (
             <div key={product.id} className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg">
