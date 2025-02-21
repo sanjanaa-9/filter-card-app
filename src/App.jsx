@@ -60,7 +60,7 @@ const App = () => {
               <p className="text-gray-700 mb-3">{product.description}</p>
               <div className="flex justify-between items-center">
                 <p className="text-lg font-bold text-blue-600">₹{product.price}</p>
-                <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800">Buy Now</button>
+                <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 cursor-pointer">Buy Now</button>
               </div>
             </div>
           ))}
